@@ -60,7 +60,7 @@ try:
                   salary = float(items[2])
                   #LECTURE SECTION 3
                   #REQUIREMENT:  NOTE RECORDS THAT EXCEED OR WILL EXCEED HIGH_SALARY AMOUNT
-                  salary *= (1 - RECOMMENDED_INCREASE)
+                  salary *= (1 + RECOMMENDED_INCREASE)
                   new_data.append([title,name,salary])
                   if salary > HIGH_SALARY:
                         logging.warning(f"{name}'s salary {salary} "
